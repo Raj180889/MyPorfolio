@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Raj Kumar Portfolio</title>
+    <title>Hartik Teetwal Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -49,6 +49,7 @@
   margin: .5rem 0 1.2rem 0;
   border-radius: 0;
   height: .7rem;
+  
 }
 
 .skill-mf .progress .progress-bar {
@@ -80,8 +81,9 @@
 }
 
 .bullet::marker{
-	background-color: white;
+	/* color: white; */
 }
+
 
 @keyframes typing {
   from {
@@ -123,6 +125,37 @@
 	width: 100%;
 }
 
+@media (max-width:670px) {
+	.profile-img{
+		flex-direction: column;
+	}
+}
+
+
+@media (max-width:670px) {
+	.profile-img{
+		flex-direction: column;
+	}
+}
+
+
+@media (max-width:670px) {
+	.about-img{
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width:670px) {
+	.about-dec{
+		padding: 27px;
+	}
+}
+
+
+
+
 
 </style>
 
@@ -142,9 +175,8 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-			<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#main-skills" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -214,7 +246,7 @@
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 			            <p><a href="https://www.linkedin.com/in/raj-kumar-115babb6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-primary py-3 px-4">Linkedin</a> 
-							<a href="skills-section" class="btn btn-white btn-outline-white py-3 px-4">Skills</a></p>
+							<a href="#main-skills" style="transition: .5s all linear;" class="btn btn-white btn-outline-white py-3 px-4">Skills</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -223,9 +255,24 @@
 		</div>
     </section>
 
+	<section class="Profile_detail" style="width: 100vw; display: flex; justify-content: center;">
+		<div class="profile-img" style="width: 1140px; display: flex ;
+		justify-content: space-between;">
+			<div class="about-img" style="margin-right: 20px;">
+				<img src="images/about.jpg" style="width: 200px; height: 250px;" alt="">
+			</div>
+			<div class="about-dec">
+				<h2 class="mb-4">About Me</h2>
+								
+				<p>As a dedicated and strategic HR Generalist, I leverage my passion for people management and organizational development to foster a positive work environment. With 8+ years of experience in the Manufacturing Unit and Corporate Office, I possess expertise in talent acquisition, performance management, employee engagement, benefits administration and compliance, Training and Development. My goal is to provide exceptional support, guidance, and innovative solutions that drive business outcomes and enhance employee experiences.</p>
+			</div>
+		</div>
+
+	</section>
 
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+
+    <section class="ftco-about img ftco-section ftco-no-pb" style="padding-top: 50px;" id="about-section">
     	<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
@@ -233,54 +280,45 @@
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Raj Kumar</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Assist. Manager (HR)</span></p>
-										<p><span class="title-s">Experience: </span> <span>8+ Year</span></p>
-										<p><span class="title-s">Address: </span> <span>Muradnagar(GZB) UP,India</span></p>
-									  </div>
-									</div>
-								  </div>
+								
 
-								<div class="skill-mf" id="skills-section">
-									<p class="title-s" style="font-weight: bold; font-size: 25px; color: #ffbd39;" >Skills</p>
+								<div class="skill-mf">
+									<p class="title-s" style="font-weight: bold; font-size: 25px; color: #ffbd39;" id="main-skills" >Skills</p>
 									<p class="title-s" style="font-weight: bold; margin-bottom: 2px; color: #fff;" >Core Skills:</p>
-									<p style="margin: 1px;"><span class="prograss">Payroll Processing</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Recruitment and Selection</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Employee Onboarding and Training</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Employee Relations</span> </p>	
-									<p style="margin: 1px;"><span class="prograss">Performance Management</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Compliance with Labor Laws</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Data Analysis and Reporting</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Communication and Interpersonal Skills</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Conflict Resolution
-									</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Policy Development and Implementation</span> </p>
+									<ul>
+									<li style="margin: 1px;"><span class="prograss bullet">Payroll Processing</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Recruitment and Selection</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Employee Onboarding and Training</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Employee Relations</span> </li>	
+									<li style="margin: 1px;"><span class="prograss bullet">Performance Management</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Compliance with Labor Laws</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Data Analysis and Reporting</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Communication and Interpersonal Skills</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Conflict Resolution
+									</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Policy Development and Implementation</span> </li>
+								</ul>
 									<p class="title-s" style="font-weight: bold; margin-bottom: 2px; margin-top: 10px; color: #fff;" >Soft Skills:</p>
-									<p style="margin: 1px;"><span class="prograss">Problem-Solving</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Time Management</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Organization
-									<p style="margin: 1px;"><span class="prograss">Communication
-									</span> </p>	
-									<p style="margin: 1px;"><span class="prograss">Leadership</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Team Management</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Strategic Thinking</span> </p>
+									<ul>
+									<li style="margin: 1px;"><span class="prograss bullet">Problem-Solving</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Time Management</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Organization</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Communication
+									</span> </li>	
+									<li style="margin: 1px;"><span class="prograss bullet">Leadership</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Team Management</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Strategic Thinking</span> </li>
+								</ul>
 									<p class="title-s" style="font-weight: bold; margin-bottom: 2px; margin-top: 10px; color: #fff;" >Technical Skills:</p>
-									<p style="margin: 1px;"><span class="prograss">HRIS & EDM</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Microsoft Office (Excel, Word, PowerPoint, VBA, Macro)
-									</span> </p>	
-									<p style="margin: 1px;"><span class="prograss">Google Suite (Docs, Sheets, Slides)</span> </p>
-									<p style="margin: 1px;"><span class="prograss">HR software (HRone)</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Strategic Thinking</span> </p>
-									<p style="margin: 1px;"><span class="prograss">Typing Speed 50 Words / Minute in English and 30 Words/Minute in Hindi.</span> </p>
+									<ul>
+									<li style="margin: 1px;"><span class="prograss bullet">HRIS & EDM</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Microsoft Office (Excel, Word, PowerPoint, VBA, Macro)
+									</span> </li>	
+									<li style="margin: 1px;"><span class="prograss bullet">Google Suite (Docs, Sheets, Slides)</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">HR software (HRone)</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Strategic Thinking</span> </li>
+									<li style="margin: 1px;"><span class="prograss bullet">Typing Speed 50 Words / Minute in English and 30 Words/Minute in Hindi.</span> </li>
+								</ul>
 								</div>
 							</div>
 						</div>
@@ -291,12 +329,10 @@
 							<div class="col-md-12 heading-section ftco-animate">
 								
 								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
 								
-								<p>As a dedicated and strategic HR Generalist, I leverage my passion for people management and organizational development to foster a positive work environment. With 8+ years of experience in the Manufacturing Unit and Corporate Office, I possess expertise in talent acquisition, performance management, employee engagement, benefits administration and compliance, Training and Development. My goal is to provide exceptional support, guidance, and innovative solutions that drive business outcomes and enhance employee experiences.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class=""><span>Rolls & Responsibility:</li>
-										<!-- <ul style="list-style: circle; " type = "circle"> -->
+								<ul class="about-info mt-4 px-md-0 px-2" style="list-style: none;">
+									<p class="title-s" style="font-weight: bold; padding-left: 10px; font-size: 25px; color: #ffbd39;" id="main-skills" >Rolls & Responsibility:</p>
+										<ul type ='disc'>
 									<li class="bullet" style="font-size: 16px; margin: 1px; color: #999999;">Making Company Policy and implementing.<span></li>
 									<li class="bullet" style="font-size: 16px; margin: 1px; color: #999999;">Coordination with the Department of “EPF, ESIC, Labour, UPSIDC, Jila Panchayat and
 										Electricity.”
@@ -361,8 +397,8 @@
 
 								</li>
 								
-							<!-- </ul> -->
-									<li class="d-flex"><span>Language:</span> <span>English (Excellent), Hindi</span></li>
+							</ul>
+									<li class="d-flex" style="padding-left: 10px;"><span>Language:</span> <span>English (Excellent), Hindi</span></li>
 									
 								</ul>
 							</div>
@@ -387,10 +423,14 @@
 
 
 	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
+    <section class="ftco-section ftco-no-pb" style="padding-top: 0px;" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
-          
+          <!-- <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p> As a dedicated and strategic HR Generalist, I leverage my passion for people management and organizational development to foster a positive work environment. With 8+ years of experience in the Manufacturing Unit and Corporate Office, I possess expertise in talent acquisition, performance management, employee engagement, benefits administration and compliance, Training and Development. My goal is to provide exceptional support, guidance, and innovative solutions that drive business outcomes and enhance employee experiences.</p>
+          </div> -->
         </div>
 
 		<div class="row">
