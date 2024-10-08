@@ -154,6 +154,28 @@
           font-size: 20px;
         }
       }
+      @media (max-width: 1000px) {
+        #typing-animation {
+          font-size: 20px;
+        }
+      }
+      .profile-img{
+        width: 1140px;
+      }
+      @media (max-width: 1200px) {
+        .profile-img {
+          /* font-size: 20px; */
+          width: 990px;
+          /* padding: 0 40px; */
+        }
+      }
+      @media (max-width: 1000px) {
+        .profile-img {
+          /* font-size: 20px; */
+          width: 750px;
+          /* padding: 0 40px; */
+        }
+      }
       @media (max-width: 670px) {
         .skill-mf {
           margin-left: 5px;
@@ -309,19 +331,22 @@
     >
       <div
         class="profile-img"
-        style="width: 1140px; display: flex; justify-content: space-between"
+        style="display: flex; justify-content: space-between"
       >
-        <div class="about-img" style="margin-right: 20px">
+      <div class="img-container" style="display: flex; width: 100%; justify-content: center;">
+
+        <div class="about-img" style="margin-right: 20px; height: 250px; width: 250px; border-radius: 50%; padding: 5px; background: linear-gradient(to right, red, blue, green, pink, yellow);">
           <img
-            src="images/about.jpg"
-            style="width: 200px; height: 250px"
-            alt=""
+          src="images/about.jpg"
+          style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; "
+          alt=""
           />
         </div>
+      </div>
         <div class="about-dec">
           <h2 class="mb-4">About Me</h2>
 
-          <p>
+          <p style="text-align: justify;">
             As a dedicated and strategic HR Generalist, I leverage my passion
             for people management and organizational development to foster a
             positive work environment. With 8+ years of experience in the
@@ -499,6 +524,7 @@
                 </div>
               </div>
             </div>
+
 
             <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
               <div class="row justify-content-start pb-3">
